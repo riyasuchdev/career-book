@@ -1,0 +1,73 @@
+<!--
+  ~ Copyright (c) 2016 VMware, Inc. All Rights Reserved.
+  ~ This software is released under MIT license.
+  ~ The full license information can be found in LICENSE in the root directory of this project.
+  -->
+<form class="form" [formGroup]="NewUserForm" (ngSubmit)="onSubmit()" [hidden]="submitted">
+    <section class="form-block">
+        <h2>Personal Information</h2>
+        <hr />
+
+        <div class="form-group">
+            <label for="firsName">First name</label>
+            <label for="firstName"
+                aria-haspopup="true"
+                role="tooltip"
+                class="tooltip tooltip-validation tooltip-sm"
+                [class.invalid]="NewUserForm.get('firstName').invalid
+                    && (NewUserForm.get('firstName').dirty || NewUserForm.get('firstName').touched)">
+                <input id="firstName" type="text"
+                    formControlName="firstName">
+                <span class="tooltip-content">
+                    First Name is required.
+                </span>
+            </label>
+        </div>
+
+        <!-- Last Name -->
+        <div class="form-group">
+          <label for="lastName">Last name</label>
+          <label for="lastName"
+              aria-haspopup="true"
+              role="tooltip"
+              class="tooltip tooltip-validation tooltip-sm"
+              [class.invalid]="NewUserForm.get('lastName').invalid
+                  && (NewUserForm.get('lastName').dirty || NewUserForm.get('lastName').touched)">
+              <input id="lastName" type="text"
+                  formControlName="lastName">
+              <span class="tooltip-content">
+                  Last Name is required.
+              </span>
+          </label>
+        </div> 
+        <!-- About -->
+        <div class="form-group">
+          <label for="about">About</label>
+          <textarea id="about" formControlName="about"></textarea>      
+        </div> 
+        
+        <button class="btn btn-primary"
+            type="submit"
+            [disabled]="NewUserForm.invalid">Add</button>
+    </section>
+</form>
+
+
+
+
+
+
+ <!-- 
+<p>This is a page to help demonstrate routing.</p>
+<button class="btn btn-primary" (click)="open = true">Show modal</button>
+<clr-modal [(clrModalOpen)]="open">
+  <h3 class="modal-title">I have a nice title</h3>
+  <div class="modal-body">
+    <p>But not much to say...</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline" (click)="open = false">Cancel</button>
+    <button type="button" class="btn btn-primary" (click)="open = false">Ok</button>
+  </div>
+</clr-modal>
+-->
