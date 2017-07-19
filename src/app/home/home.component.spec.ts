@@ -10,7 +10,7 @@ import { HomeComponent } from './home.component';
 
 describe('HomeComponent', () => {
 
-    let expectedMsg: string = 'This is a Clarity seed application. This is the default page that loads for the application.';
+    let expectedMsg: string = 'Welcome to Career Book !';
 
     let fixture: ComponentFixture<any>;
     let compiled: any;

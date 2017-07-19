@@ -7,6 +7,7 @@ import { ClarityModule } from 'clarity-angular';
 import { AppComponent } from './app.component';
 import { ROUTING } from "./app.routing";
 import { HomeComponent } from "./home/home.component";
+import {CareerbookComponent} from "./careerbook/careerbook.component";
 import { AboutComponent } from "./about/about.component";
 import { LoginComponent } from "./login/login.component";
 import { mentor_profileComponent } from "./mentor_profile/mentor_profile.component";
@@ -17,7 +18,8 @@ import { mentor_profileComponent } from "./mentor_profile/mentor_profile.compone
         AboutComponent,
         HomeComponent,
         LoginComponent,
-        mentor_profileComponent
+        mentor_profileComponent,
+        CareerbookComponent
     ],
     imports: [
         BrowserAnimationsModule,

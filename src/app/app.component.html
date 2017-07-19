@@ -15,7 +15,7 @@
     </div>
   </clr-header>
   <nav class="sub-nav" [clr-nav-level]="1">
-    <ul class="nav">
+            <section class="sidenav-content">
       <li class="nav-item">
         <a class="nav-link" href="#" [routerLink]="['/home']" routerLinkActive="active">Home</a>
       </li>
@@ -25,9 +25,14 @@
       <li class="nav-item">
         <a class="nav-link" href="#" [routerLink]="['/login']" routerLinkActive="active">Login</a>
       </li>
-      <li class="nav-item">
+      <!--<li class="nav-item">
         <a class="nav-link" href="#" [routerLink]="['/mentor_profile']" routerLinkActive="active">Mentor Profile</a>
+      </li>-->
+
+       <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['/careerbook']" routerLinkActive="active">Career Book</a>
       </li>
+    
     </ul>
   </nav>
   <div class="content-container">
